@@ -33,6 +33,7 @@ import Reserva_check_out from '../screen/reserva_check_out';
 import Forma_pagamento from '../screen/forma_pagamento';
 import Cadastro_cartao from '../screen/cadastro_cartao';
 import Finalizacao_pagamento from '../screen/finalizacao_pagamento';
+import Extrato from '../screen/extrato';
 
 function TabNavigator() {
   return (
@@ -64,7 +65,7 @@ function TabNavigator() {
               return <Menu_Icon_Perfil width={40} height={40} fill={color} />;
           }
 
-          if (route.name === 'Faq') {
+          if (route.name === 'Extrato') {
             if (focused)
               return <Menu_Icon_Faq width={40} height={40} fill={color} />;
             else return <Menu_Icon_Faq width={40} height={40} fill={color} />;
@@ -105,8 +106,8 @@ function TabNavigator() {
       />
       <Tab.Screen
         options={{title: 'Inicio'}}
-        name="Faq"
-        component={Principal}
+        name="Extrato"
+        component={Extrato}
       />
     </Tab.Navigator>
   );
