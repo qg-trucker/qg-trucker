@@ -1,4 +1,4 @@
-import { StyleSheet } from 'pr-unit';
+import {StyleSheet} from 'pr-unit';
 
 export default StyleSheet.create({
   main: {
@@ -12,19 +12,19 @@ export default StyleSheet.create({
     backgroundColor: '#326726',
     justifyContent: 'space-between',
     alignItems: 'center',
-    flexDirection: 'row'
+    flexDirection: 'row',
   },
 
   text_header: {
     color: 'white',
     fontSize: 70,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
 
   img_perfil: {
     width: 200,
     height: 200,
-    borderRadius: 100
+    borderRadius: 100,
   },
 
   input: {
