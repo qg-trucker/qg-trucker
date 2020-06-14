@@ -105,7 +105,7 @@ function TabNavigator() {
 export default function navigation() {
   return (
     <NavigationContainer>
-      <Stack.Navigator headerMode="none" initialRouteName="Principal">
+      <Stack.Navigator headerMode="none" initialRouteName="Perfil">
         <Stack.Screen name="Intro" component={Intro} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Registro" component={Registro} />

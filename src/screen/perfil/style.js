@@ -3,14 +3,28 @@ import { StyleSheet } from 'pr-unit';
 export default StyleSheet.create({
   main: {
     flex: 1,
-    justifyContent: 'center',
     alignItems: 'center',
   },
+  header: {
+    width: '100%',
+    height: 400,
+    paddingHorizontal: 50,
+    backgroundColor: '#326726',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    flexDirection: 'row'
+  },
 
-  logo: {
-    width: 900,
-    height: 300,
-    resizeMode: 'contain',
+  text_header: {
+    color: 'white',
+    fontSize: 70,
+    fontWeight: 'bold'
+  },
+
+  img_perfil: {
+    width: 200,
+    height: 200,
+    borderRadius: 100
   },
 
   input: {
