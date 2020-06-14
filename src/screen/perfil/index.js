@@ -1,19 +1,12 @@
-import React, { Component } from 'react';
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  Image,
-  TextInput,
-} from 'react-native';
-import { Icon_porco } from '../../assets/svg/icons';
+import React, {Component} from 'react';
+import {View, Text, TouchableOpacity, Image, TextInput} from 'react-native';
+import {Icon_porco} from '../../assets/svg/icons';
 
 import styles from './style.js';
 
 export default (props) => {
   return (
     <View style={styles.main}>
-      <View style={{ backgroundColor: '#696532', width: '100%', height: 20 }} />
       <View style={styles.header}>
         <View>
           <Text style={styles.text_header}>Simão de Barros</Text>
@@ -27,7 +20,7 @@ export default (props) => {
 
       <View style={styles.button}>
         <Text style={styles.buttonText}>
-          <Text style={{ fontWeight: 'bold' }}>Saldo: </Text>
+          <Text style={{fontWeight: 'bold'}}>Saldo: </Text>
           <Icon_porco width={20} height={20} fill={'white'} /> 70 moedas
         </Text>
       </View>
@@ -38,7 +31,7 @@ export default (props) => {
 
       <TextInput
         style={styles.input}
-        value={"Simão de Barros"}
+        value={'Simão de Barros'}
         placeholder={'Nome completo'}
         placeholderTextColor={'black'}
       />
@@ -59,14 +52,14 @@ export default (props) => {
 
       <TextInput
         style={styles.input}
-        value={"(19) 99999-9999"}
+        value={'(19) 99999-9999'}
         placeholder={'Telefone'}
         placeholderTextColor={'black'}
       />
 
       <TextInput
         style={styles.input}
-        value={"asidsaj"}
+        value={'asidsaj'}
         placeholder={'Senha'}
         placeholderTextColor={'black'}
         secureTextEntry={true}
@@ -77,4 +70,4 @@ export default (props) => {
       </TouchableOpacity>
     </View>
   );
-}
+};

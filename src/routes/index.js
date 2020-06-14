@@ -27,6 +27,8 @@ import Qg_reserva from '../screen/qg_reserva';
 import Qg_reserva_sucesso from '../screen/qg_reserva_sucesso';
 import Reservas from '../screen/reservas';
 import Comprar_moedas from '../screen/comprar_moedas';
+import Reserva_check_in from '../screen/reserva_check_in';
+import Reserva_check_out from '../screen/reserva_check_out';
 
 function TabNavigator() {
   return (
@@ -109,7 +111,7 @@ function TabNavigator() {
 export default function navigation() {
   return (
     <NavigationContainer>
-      <Stack.Navigator headerMode="none" initialRouteName="Comprar_moedas">
+      <Stack.Navigator headerMode="none" initialRouteName="Principal">
         <Stack.Screen name="Intro" component={Intro} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Registro" component={Registro} />
@@ -119,6 +121,8 @@ export default function navigation() {
           name="Qg_reserva_sucesso"
           component={Qg_reserva_sucesso}
         />
+        <Stack.Screen name="Check_in" component={Reserva_check_in} />
+        <Stack.Screen name="Check_out" component={Reserva_check_out} />
         <Stack.Screen name="Principal" component={TabNavigator} />
         <Stack.Screen name="Perfil" component={Perfil} />
         <Stack.Screen name="Comprar_moedas" component={Comprar_moedas} />

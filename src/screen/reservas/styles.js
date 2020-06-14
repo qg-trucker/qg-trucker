@@ -25,13 +25,11 @@ export default StyleSheet.create({
 
   button: {
     backgroundColor: '#cb6005',
-    width: 200,
+    width: 380,
     height: 120,
     alignItems: 'center',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    paddingHorizontal: 20,
-    marginLeft: 40,
+    justifyContent: 'center',
+    marginTop: 50,
   },
 
   moedas: {
@@ -44,5 +42,25 @@ export default StyleSheet.create({
     margin: 150,
     fontFamily: fonts.bold,
     fontSize: 50,
+  },
+
+  containerModal: {
+    backgroundColor: 'white',
+    width: '100%',
+    height: 1500,
+    bottom: 0,
+    position: 'absolute',
+    padding: 150,
+  },
+
+  titleModal: {
+    fontFamily: fonts.bold,
+    fontSize: 60,
+  },
+
+  titleCheck: {
+    fontFamily: fonts.bold,
+    fontSize: 40,
+    color: 'darkorange',
   },
 });
