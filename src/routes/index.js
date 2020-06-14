@@ -34,6 +34,7 @@ import Forma_pagamento from '../screen/forma_pagamento';
 import Cadastro_cartao from '../screen/cadastro_cartao';
 import Finalizacao_pagamento from '../screen/finalizacao_pagamento';
 import Extrato from '../screen/extrato';
+import Splash from '../screen/splash';
 
 function TabNavigator() {
   return (
@@ -116,7 +117,8 @@ function TabNavigator() {
 export default function navigation() {
   return (
     <NavigationContainer>
-      <Stack.Navigator headerMode="none" initialRouteName="Intro">
+      <Stack.Navigator headerMode="none" initialRouteName="Splash">
+        <Stack.Screen name="Splash" component={Splash} />
         <Stack.Screen name="Intro" component={Intro} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Registro" component={Registro} />
