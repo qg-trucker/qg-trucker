@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import {View, Text, TouchableOpacity, Image, TextInput} from 'react-native';
-import {Icon_porco} from '../../assets/svg/icons';
+import React, { Component } from 'react';
+import { View, Text, TouchableOpacity, Image, TextInput } from 'react-native';
+import { Icon_porco } from '../../assets/svg/icons';
 
 import styles from './style.js';
 
@@ -18,9 +18,9 @@ export default (props) => {
         />
       </View>
 
-      <View style={styles.button}>
+      <View style={styles.qtd_moedas}>
         <Text style={styles.buttonText}>
-          <Text style={{fontWeight: 'bold'}}>Saldo: </Text>
+          <Text style={{ fontWeight: 'bold' }}>Saldo: </Text>
           <Icon_porco width={20} height={20} fill={'white'} /> 70 moedas
         </Text>
       </View>
@@ -28,45 +28,11 @@ export default (props) => {
       <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('Comprar_moedas')}>
         <Text style={styles.buttonText}>Comprar moedas</Text>
       </TouchableOpacity>
-
-      <TextInput
-        style={styles.input}
-        value={'Simão de Barros'}
-        placeholder={'Nome completo'}
-        placeholderTextColor={'black'}
-      />
-
-      <TextInput
-        style={styles.input}
-        value={'Sexo masculino'}
-        placeholder={'Gênero'}
-        placeholderTextColor={'black'}
-      />
-
-      <TextInput
-        style={styles.input}
-        value={'10/08/1968'}
-        placeholder={'Data de nascimento'}
-        placeholderTextColor={'black'}
-      />
-
-      <TextInput
-        style={styles.input}
-        value={'(19) 99999-9999'}
-        placeholder={'Telefone'}
-        placeholderTextColor={'black'}
-      />
-
-      <TextInput
-        style={styles.input}
-        value={'asidsaj'}
-        placeholder={'Senha'}
-        placeholderTextColor={'black'}
-        secureTextEntry={true}
-      />
-
-      <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>Atualizar cadastro</Text>
+      <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('Dados_perfil')}>
+        <Text style={styles.buttonText}>Editar perfil</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('Ranking')}>
+        <Text style={styles.buttonText}>Meus pontos</Text>
       </TouchableOpacity>
     </View>
   );

@@ -5,26 +5,29 @@ export default StyleSheet.create({
     flex: 1,
     alignItems: 'center',
   },
+
   header: {
     width: '100%',
-    height: 400,
-    paddingHorizontal: 50,
-    backgroundColor: '#326726',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    flexDirection: 'row',
+    height: 350,
+    justifyContent: 'center',
+    resizeMode: 'cover',
+  },
+
+  btn_voltar: {
+    color: 'white',
+    fontSize: 50,
+    fontWeight: 'bold',
+    marginLeft: 70,
+    marginBottom: 20,
+    fontFamily: 'Roboto-Regular',
   },
 
   text_header: {
     color: 'white',
     fontSize: 70,
     fontWeight: 'bold',
-  },
-
-  img_perfil: {
-    width: 200,
-    height: 200,
-    borderRadius: 100,
+    marginLeft: 70,
+    fontFamily: 'Roboto-Regular',
   },
 
   input: {
@@ -43,15 +46,6 @@ export default StyleSheet.create({
   button: {
     marginTop: 30,
     backgroundColor: '#cb6005',
-    width: 900,
-    height: 140,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-
-  qtd_moedas: {
-    marginTop: 30,
-    backgroundColor: '#326726',
     width: 900,
     height: 140,
     justifyContent: 'center',
