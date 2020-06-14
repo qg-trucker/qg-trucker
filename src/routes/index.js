@@ -35,6 +35,8 @@ import Forma_pagamento from '../screen/forma_pagamento';
 import Cadastro_cartao from '../screen/cadastro_cartao';
 import Finalizacao_pagamento from '../screen/finalizacao_pagamento';
 import Extrato from '../screen/extrato';
+import Splash from '../screen/splash';
+import Ranking from '../screen/ranking';
 
 function TabNavigator() {
   return (
@@ -117,8 +119,8 @@ function TabNavigator() {
 export default function navigation() {
   return (
     <NavigationContainer>
-      <Stack.Navigator headerMode="none" initialRouteName="Perfil">
-        <Stack.Screen name="Perfil" component={Perfil} />
+      <Stack.Navigator headerMode="none" initialRouteName="Splash">
+        <Stack.Screen name="Splash" component={Splash} />
         <Stack.Screen name="Intro" component={Intro} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Registro" component={Registro} />
@@ -138,6 +140,7 @@ export default function navigation() {
         <Stack.Screen name="Comprar_moedas" component={Comprar_moedas} />
         <Stack.Screen name="Forma_pagamento" component={Forma_pagamento} />
         <Stack.Screen name="Cadastro_cartao" component={Cadastro_cartao} />
+        <Stack.Screen name="Ranking" component={Ranking} />
         <Stack.Screen
           name="Finalizacao_pagamento"
           component={Finalizacao_pagamento}
