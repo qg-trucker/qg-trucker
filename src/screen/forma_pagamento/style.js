@@ -31,11 +31,9 @@ export default StyleSheet.create({
   },
 
   box: {
-    width: '80%',
+    width: '100%',
     marginTop: 60,
     padding: 60,
-    borderWidth: 4,
-    borderColor: '#757138',
     borderRadius: 6,
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -59,7 +57,7 @@ export default StyleSheet.create({
 
   button: {
     backgroundColor: '#cb6005',
-    padding: 20,
+    padding: 40,
     fontFamily: 'Roboto-Regular',
     color: 'white',
   },
