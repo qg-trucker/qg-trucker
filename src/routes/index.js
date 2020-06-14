@@ -20,6 +20,7 @@ import Intro from '../screen/intro';
 import Login from '../screen/login';
 import Registro from '../screen/registro';
 import Principal from '../screen/principal';
+import Qg_disponivel from '../screen/qg_disponiveis';
 
 function TabNavigator() {
   return (
@@ -75,7 +76,11 @@ function TabNavigator() {
         name="Principal"
         component={Principal}
       />
-      <Tab.Screen options={{title: 'Inicio'}} name="Qg" component={Principal} />
+      <Tab.Screen
+        options={{title: 'Inicio'}}
+        name="Qg"
+        component={Qg_disponivel}
+      />
       <Tab.Screen
         options={{title: 'Inicio'}}
         name="Reservas"
