@@ -21,6 +21,8 @@ import Login from '../screen/login';
 import Registro from '../screen/registro';
 import Principal from '../screen/principal';
 import Perfil from '../screen/perfil';
+import Qg_disponivel from '../screen/qg_disponiveis';
+import Qg_detalhes from '../screen/qg_detalhes';
 
 function TabNavigator() {
   return (
@@ -76,7 +78,11 @@ function TabNavigator() {
         name="Principal"
         component={Principal}
       />
-      <Tab.Screen options={{ title: 'Inicio' }} name="Qg" component={Principal} />
+      <Tab.Screen
+        options={{ title: 'Inicio' }}
+        name="Qg"
+        component={Qg_disponivel}
+      />
       <Tab.Screen
         options={{ title: 'Inicio' }}
         name="Reservas"
@@ -103,6 +109,7 @@ export default function navigation() {
         <Stack.Screen name="Intro" component={Intro} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Registro" component={Registro} />
+        <Stack.Screen name="Detalhes_qg" component={Qg_detalhes} />
         <Stack.Screen name="Principal" component={TabNavigator} />
         <Stack.Screen name="Perfil" component={Perfil} />
       </Stack.Navigator>
