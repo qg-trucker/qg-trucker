@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, TextInput, FlatList} from 'react-native';
+import {View, Text, TextInput, FlatList, Image} from 'react-native';
 import Modal from 'react-native-modal';
 import styles from './styles';
 import Qg from './components/qg';
@@ -20,6 +20,7 @@ export default class QGs extends Component {
         },
       ],
       showVisualizar: false,
+      showCancelar: false,
     };
   }
 
@@ -94,16 +95,62 @@ export default class QGs extends Component {
               </TouchableOpacity>
             </View>
 
-            <Text
-              style={{
-                marginTop: 50,
-                color: 'red',
-                fontFamily: fonts.bold,
-                fontSize: 22,
-                textDecorationLine: 'underline',
+            <TouchableOpacity
+              onPress={() => {
+                this.setState({showVisualizar: false});
+                setTimeout(() => {
+                  this.setState({showCancelar: true});
+                }, 500);
               }}>
-              Cancelar reserva
-            </Text>
+              <Text
+                style={{
+                  marginTop: 50,
+                  color: 'red',
+                  fontFamily: fonts.bold,
+                  fontSize: 22,
+                  textDecorationLine: 'underline',
+                }}>
+                Cancelar reserva
+              </Text>
+            </TouchableOpacity>
+          </View>
+        </Modal>
+
+        <Modal isVisible={this.state.showCancelar} style={{margin: 0}}>
+          <View
+            style={[
+              styles.containerModal,
+              {
+                justifyContent: 'center',
+                alignItems: 'center',
+              },
+            ]}>
+            <Image
+              source={require('../../assets/image/cancelar.png')}
+              style={{width: 330, height: 330, resizeMode: 'contain'}}
+            />
+            <View
+              style={{
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                width: '100%',
+              }}>
+              <TouchableOpacity
+                style={styles.button}
+                onPress={() => {
+                  this.setState({showCancelar: false});
+                }}>
+                <Text style={styles.moedas}>Cancelar</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity
+                style={styles.button}
+                onPress={() => {
+                  this.setState({showCancelar: false});
+                }}>
+                <Text style={styles.moedas}>Desistir de cancelar</Text>
+              </TouchableOpacity>
+            </View>
           </View>
         </Modal>
       </View>
