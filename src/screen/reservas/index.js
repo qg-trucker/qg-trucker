@@ -12,7 +12,7 @@ export default class QGs extends Component {
     this.state = {
       data: [
         {
-          img: 'https://i.ytimg.com/vi/t3EbiYDFvog/maxresdefault.jpg',
+          img: require('../../assets/image/qg/4.jpeg'),
           nome: 'QG 32 A',
           km: 3,
           endereco: 'Rodovia Luiz de Queiroz, KM 33, Americana',

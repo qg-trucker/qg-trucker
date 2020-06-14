@@ -63,7 +63,9 @@ export default class Login extends Component {
           secureTextEntry={true}
         />
 
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => this.props.navigation.navigate('Principal')}>
           <Text style={styles.buttonText}>Acessar</Text>
         </TouchableOpacity>
 

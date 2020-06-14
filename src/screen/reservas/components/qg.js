@@ -6,7 +6,7 @@ import {fonts} from '../../../assets';
 const qg = (props) => (
   <View style={{borderBottomWidth: 1, paddingBottom: 20}}>
     <View style={styles.container}>
-      <Image source={{uri: props.data.img}} style={styles.image} />
+      <Image source={props.data.img} style={styles.image} />
       <View>
         <Text style={styles.title}>
           {props.data.nome} | {props.data.km} KM

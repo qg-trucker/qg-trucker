@@ -23,17 +23,15 @@ export default class Qg_Detalhes extends Component {
               }}>
               <Image
                 style={styles.headerImage}
-                source={{
-                  uri:
-                    'https://dicasdearquitetura.com.br/wp-content/uploads/2017/06/medidas-de-container-capa-homedit-672x372.jpg',
-                }}
+                source={require('../../assets/image/qg/3.jpeg')}
               />
               <Image
                 style={styles.headerImage}
-                source={{
-                  uri:
-                    'https://dicasdearquitetura.com.br/wp-content/uploads/2017/06/medidas-de-container-capa-homedit-672x372.jpg',
-                }}
+                source={require('../../assets/image/qg/4.jpeg')}
+              />
+              <Image
+                style={styles.headerImage}
+                source={require('../../assets/image/qg/5.jpeg')}
               />
             </ScrollView>
           </View>

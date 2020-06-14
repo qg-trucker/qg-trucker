@@ -60,7 +60,7 @@ export default class Intro extends Component {
     );
   };
   _onDone = () => {
-    this.setState({showRealApp: true});
+    this.props.navigation.navigate('Registro');
   };
 
   render() {

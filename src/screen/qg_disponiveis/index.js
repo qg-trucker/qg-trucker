@@ -45,25 +45,21 @@ export default class QGs extends Component {
                 this.setState({
                   data: [
                     {
-                      img:
-                        'https://i.ytimg.com/vi/t3EbiYDFvog/maxresdefault.jpg',
+                      img: require('../../assets/image/qg/1.jpeg'),
                       nome: 'QG 32',
                       km: 3,
                       endereco: 'Rodovia Luiz de Queiroz, KM 33, Americana',
                       disponiveis: 2,
                     },
                     {
-                      img:
-                        'https://lh3.googleusercontent.com/proxy/sZQXComvHKsaQVzZRhE178K5AYILUyXo53shTMaIj_DKCkPpIVOTlZnMwBkjO2joKfYnbesmcbH6oLmLV14FKlN7I-PlaXCIUdOFJ811pBHLHeWepJiAYGCPRDBstTCJzfoCCK10_1aDlQ',
-
+                      img: require('../../assets/image/qg/2.jpeg'),
                       nome: 'QG 23',
                       km: 3,
                       endereco: 'Rodovia Luiz de Queiroz, KM 33, Americana',
                       disponiveis: 3,
                     },
                     {
-                      img:
-                        'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRaSXuRnM8grYAqRqD9ydGnwSBLEirTE52GLrlZxbuf4ZtMS7-i&usqp=CAU',
+                      img: require('../../assets/image/qg/3.jpeg'),
                       nome: 'QG 16',
                       km: 3,
                       endereco: 'Rodovia Luiz de Queiroz, KM 33, Americana',
