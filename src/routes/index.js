@@ -31,6 +31,7 @@ import Comprar_moedas from '../screen/comprar_moedas';
 import Reserva_check_in from '../screen/reserva_check_in';
 import Reserva_check_out from '../screen/reserva_check_out';
 import Forma_pagamento from '../screen/forma_pagamento';
+import Cadastro_cartao from '../screen/cadastro_cartao';
 
 function TabNavigator() {
   return (
@@ -133,6 +134,7 @@ export default function navigation() {
         <Stack.Screen name="Perfil" component={Perfil} />
         <Stack.Screen name="Comprar_moedas" component={Comprar_moedas} />
         <Stack.Screen name="Forma_pagamento" component={Forma_pagamento} />
+        <Stack.Screen name="Cadastro_cartao" component={Cadastro_cartao} />
       </Stack.Navigator>
     </NavigationContainer>
   );
