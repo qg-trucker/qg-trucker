@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {View, Text, TouchableOpacity, Image} from 'react-native';
-import {Icon_clock, Icon_coin, Icon_porco} from '../../assets/svg/icons';
+import {Icon_trofeu} from '../../assets/svg/icons';
 
 import styles from './style';
 
@@ -14,28 +14,25 @@ export default class Qg_reserva extends Component {
     return (
       <View style={styles.main}>
         <View>
-          <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
-            <Text style={styles.title}>Sucesso!</Text>
-
-            <TouchableOpacity style={styles.button}>
-              <Icon_porco width={30} height={30} fill={'white'} />
-              <Text style={styles.moedas}>260</Text>
-            </TouchableOpacity>
+          <View style={{alignItems: 'center'}}>
+            <Icon_trofeu width={100} height={100} fill={'orange'} />
           </View>
-          <Text style={styles.subtitle}>
-            Selecione o tempo que você deseja reservar:
-          </Text>
         </View>
 
         <Image
-          source={require('../../assets/image/success.png')}
-          style={{width: 300, resizeMode: 'contain'}}
+          source={require('../../assets/image/check_out.png')}
+          style={{
+            width: 340,
+            height: 400,
+            marginTop: 20,
+            resizeMode: 'contain',
+          }}
         />
 
         <TouchableOpacity
           style={styles.containerButton}
-          onPress={() => this.props.navigation.navigate('Reservas')}>
-          <Text style={styles.moedas}>Ver minha reservas</Text>
+          onPress={() => this.props.navigation.navigate('Qg')}>
+          <Text style={styles.moedas}>Enviar</Text>
         </TouchableOpacity>
       </View>
     );
