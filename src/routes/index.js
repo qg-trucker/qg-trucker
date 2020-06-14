@@ -26,6 +26,8 @@ import Qg_detalhes from '../screen/qg_detalhes';
 import Qg_reserva from '../screen/qg_reserva';
 import Qg_reserva_sucesso from '../screen/qg_reserva_sucesso';
 import Reservas from '../screen/reservas';
+import Reserva_check_in from '../screen/reserva_check_in';
+import Reserva_check_out from '../screen/reserva_check_out';
 
 function TabNavigator() {
   return (
@@ -118,6 +120,8 @@ export default function navigation() {
           name="Qg_reserva_sucesso"
           component={Qg_reserva_sucesso}
         />
+        <Stack.Screen name="Check_in" component={Reserva_check_in} />
+        <Stack.Screen name="Check_out" component={Reserva_check_out} />
         <Stack.Screen name="Principal" component={TabNavigator} />
         <Stack.Screen name="Perfil" component={Perfil} />
       </Stack.Navigator>

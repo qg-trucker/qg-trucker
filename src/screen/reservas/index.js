@@ -77,13 +77,19 @@ export default class QGs extends Component {
               style={{flexDirection: 'row', justifyContent: 'space-between'}}>
               <TouchableOpacity
                 style={styles.button}
-                onPress={() => this.props.navigation.navigate('Check_in')}>
+                onPress={() => {
+                  this.setState({showVisualizar: false});
+                  this.props.navigation.navigate('Check_in');
+                }}>
                 <Text style={styles.moedas}>Check-in</Text>
               </TouchableOpacity>
 
               <TouchableOpacity
                 style={styles.button}
-                onPress={() => this.props.navigation.navigate('Check_out')}>
+                onPress={() => {
+                  this.setState({showVisualizar: false});
+                  this.props.navigation.navigate('Check_out');
+                }}>
                 <Text style={styles.moedas}>Check-out</Text>
               </TouchableOpacity>
             </View>
