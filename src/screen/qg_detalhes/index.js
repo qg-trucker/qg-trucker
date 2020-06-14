@@ -16,6 +16,7 @@ export default class Qg_Detalhes extends Component {
           <View style={{height: pr * 400}}>
             <ScrollView
               horizontal={true}
+              showsHorizontalScrollIndicator={false}
               contentContainerStyle={{
                 paddingHorizontal: 5,
                 paddingTop: 20,

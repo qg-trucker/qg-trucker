@@ -25,6 +25,7 @@ import Qg_disponivel from '../screen/qg_disponiveis';
 import Qg_detalhes from '../screen/qg_detalhes';
 import Qg_reserva from '../screen/qg_reserva';
 import Qg_reserva_sucesso from '../screen/qg_reserva_sucesso';
+import Qg_detalhes_historico from '../screen/qg_detalhes_historico';
 import Reservas from '../screen/reservas';
 import Reserva_check_in from '../screen/reserva_check_in';
 import Reserva_check_out from '../screen/reserva_check_out';
@@ -110,12 +111,18 @@ function TabNavigator() {
 export default function navigation() {
   return (
     <NavigationContainer>
-      <Stack.Navigator headerMode="none" initialRouteName="Principal">
+      <Stack.Navigator
+        headerMode="none"
+        initialRouteName="Qg_detalhes_historico">
         <Stack.Screen name="Intro" component={Intro} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Registro" component={Registro} />
         <Stack.Screen name="Detalhes_qg" component={Qg_detalhes} />
         <Stack.Screen name="Qg_reserva" component={Qg_reserva} />
+        <Stack.Screen
+          name="Qg_detalhes_historico"
+          component={Qg_detalhes_historico}
+        />
         <Stack.Screen
           name="Qg_reserva_sucesso"
           component={Qg_reserva_sucesso}
