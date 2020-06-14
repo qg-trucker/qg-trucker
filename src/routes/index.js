@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
-import {NavigationContainer} from '@react-navigation/native';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import React, { Component } from 'react';
+import { createStackNavigator } from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import pr from 'pr-unit';
-import {colors, fonts} from '../assets';
+import { colors, fonts } from '../assets';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -27,14 +27,15 @@ import Qg_reserva from '../screen/qg_reserva';
 import Qg_reserva_sucesso from '../screen/qg_reserva_sucesso';
 import Qg_detalhes_historico from '../screen/qg_detalhes_historico';
 import Reservas from '../screen/reservas';
+import Comprar_moedas from '../screen/comprar_moedas';
 import Reserva_check_in from '../screen/reserva_check_in';
 import Reserva_check_out from '../screen/reserva_check_out';
 
 function TabNavigator() {
   return (
     <Tab.Navigator
-      screenOptions={({route}) => ({
-        tabBarIcon: ({focused, color, size}) => {
+      screenOptions={({ route }) => ({
+        tabBarIcon: ({ focused, color, size }) => {
           if (route.name === 'Principal') {
             if (focused)
               return <Menu_Icon_Home width={40} height={40} fill={color} />;
@@ -80,27 +81,27 @@ function TabNavigator() {
         },
       }}>
       <Tab.Screen
-        options={{title: 'Inicio'}}
+        options={{ title: 'Inicio' }}
         name="Principal"
         component={Principal}
       />
       <Tab.Screen
-        options={{title: 'Inicio'}}
+        options={{ title: 'Inicio' }}
         name="Qg"
         component={Qg_disponivel}
       />
       <Tab.Screen
-        options={{title: 'Inicio'}}
+        options={{ title: 'Inicio' }}
         name="Reservas"
         component={Reservas}
       />
       <Tab.Screen
-        options={{title: 'Perfil'}}
+        options={{ title: 'Perfil' }}
         name="Perfil"
         component={Perfil}
       />
       <Tab.Screen
-        options={{title: 'Inicio'}}
+        options={{ title: 'Inicio' }}
         name="Faq"
         component={Principal}
       />
@@ -131,6 +132,7 @@ export default function navigation() {
         <Stack.Screen name="Check_out" component={Reserva_check_out} />
         <Stack.Screen name="Principal" component={TabNavigator} />
         <Stack.Screen name="Perfil" component={Perfil} />
+        <Stack.Screen name="Comprar_moedas" component={Comprar_moedas} />
       </Stack.Navigator>
     </NavigationContainer>
   );
