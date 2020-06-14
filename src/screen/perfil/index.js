@@ -32,7 +32,7 @@ export default (props) => {
         </Text>
       </View>
 
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('Comprar_moedas')}>
         <Text style={styles.buttonText}>Comprar moedas</Text>
       </TouchableOpacity>
 
