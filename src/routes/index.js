@@ -25,6 +25,7 @@ import Qg_disponivel from '../screen/qg_disponiveis';
 import Qg_detalhes from '../screen/qg_detalhes';
 import Qg_reserva from '../screen/qg_reserva';
 import Qg_reserva_sucesso from '../screen/qg_reserva_sucesso';
+import Reservas from '../screen/reservas';
 
 function TabNavigator() {
   return (
@@ -88,7 +89,7 @@ function TabNavigator() {
       <Tab.Screen
         options={{title: 'Inicio'}}
         name="Reservas"
-        component={Principal}
+        component={Reservas}
       />
       <Tab.Screen
         options={{title: 'Perfil'}}
