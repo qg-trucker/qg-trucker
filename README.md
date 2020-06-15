@@ -6,12 +6,12 @@
   </a>
 </h1>
 
-<h3 align="center">
-  <a href="https://github.com/qg-trucker/qg-trucker">Getting Started</a>
-  <span> · </span>
-  <a href="https://www.youtube.com/channel/UCiMq8cSktnwq_5xnEaOQoOw/?guided_help_flow=5">Showcase</a>
-  <span> · </span>
-</h3>
+
+<h1 align="center">
+  <a href="https://www.youtube.com/channel/UCiMq8cSktnwq_5xnEaOQoOw/?guided_help_flow=5">
+    YOUTUBE DEMO VIDEO
+  </a>
+</h1>
 
 <p align="center">
   <a href="https://github.com/qg-trucker/qg-trucker">
