@@ -6,10 +6,12 @@
   </a>
 </h1>
 
-<p align="center">
-  <strong>Learn once, write anywhere:</strong><br>
-  Build mobile apps with React.
-</p>
+<h3 align="center">
+  <a href="https://github.com/qg-trucker/qg-trucker">Getting Started</a>
+  <span> · </span>
+  <a href="https://www.youtube.com/channel/UCiMq8cSktnwq_5xnEaOQoOw/?guided_help_flow=5">Showcase</a>
+  <span> · </span>
+</h3>
 
 <p align="center">
   <a href="https://github.com/qg-trucker/qg-trucker">
@@ -25,13 +27,6 @@
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
   </a>
 </p>
-
-<h3 align="center">
-  <a href="https://github.com/qg-trucker/qg-trucker">Getting Started</a>
-  <span> · </span>
-  <a href="https://www.youtube.com/channel/UCiMq8cSktnwq_5xnEaOQoOw/?guided_help_flow=5">Showcase</a>
-  <span> · </span>
-</h3>
 
 Ao realizar o download do app, o usuário acessa um tutorial e a seção de cadastro.
 
