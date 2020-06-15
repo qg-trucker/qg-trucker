@@ -24,9 +24,6 @@
   <a href="https://reactnative.dev/docs/contributing">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
   </a>
-  <a href="https://twitter.com/intent/follow?screen_name=reactnative">
-    <img src="https://img.shields.io/twitter/follow/reactnative.svg?label=Follow%20@reactnative" alt="Follow @reactnative" />
-  </a>
 </p>
 
 <h3 align="center">
@@ -70,4 +67,4 @@ Follow the [Getting Started guide](https://reactnative.dev/docs/getting-started.
 
 - [Trying out React Native][QG-TRUCKER]
 
-[qg-tracker]: https://github.com/qg-trucker/qg-trucker!
+[qg-tracker]: https://github.com/qg-trucker/qg-trucker
