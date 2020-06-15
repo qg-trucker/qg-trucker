@@ -12,22 +12,22 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/facebook/react-native/blob/master/LICENSE">
+  <a href="https://github.com/qg-trucker/qg-trucker">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="React Native is released under the MIT license." />
   </a>
-  <a href="https://circleci.com/gh/facebook/react-native">
+  <a href="https://github.com/qg-trucker/qg-trucker">
     <img src="https://circleci.com/gh/facebook/react-native.svg?style=shield" alt="Current CircleCI build status." />
   </a>
-  <a href="https://www.npmjs.org/package/react-native">
+  <a href="https://github.com/qg-trucker/qg-trucker">
     <img src="https://badge.fury.io/js/react-native.svg" alt="Current npm package version." />
   </a>
-  <a href="https://reactnative.dev/docs/contributing">
+  <a href="https://github.com/qg-trucker/qg-trucker">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
   </a>
 </p>
 
 <h3 align="center">
-  <a href="https://reactnative.dev/docs/getting-started">Getting Started</a>
+  <a href="https://github.com/qg-trucker/qg-trucker">Getting Started</a>
   <span> · </span>
   <a href="https://www.youtube.com/channel/UCiMq8cSktnwq_5xnEaOQoOw/?guided_help_flow=5">Showcase</a>
   <span> · </span>
