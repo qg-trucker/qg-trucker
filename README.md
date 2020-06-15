@@ -1,7 +1,7 @@
 
 
 <h1 align="center">
-  <a href="https://reactnative.dev/">
+  <a href="https://github.com/qg-trucker/qg-trucker">
     QG TRUCKER
   </a>
 </h1>
@@ -65,6 +65,4 @@ React Native apps may target iOS 10.0 and Android 4.1 (API 16) or newer. You may
 
 Follow the [Getting Started guide](https://reactnative.dev/docs/getting-started.html). The recommended way to install React Native depends on your project. Here you can find short guides for the most common scenarios:
 
-- [Trying out React Native][QG-TRUCKER]
-
-[qg-tracker]: https://github.com/qg-trucker/qg-trucker
+- [Trying out React Native] QG-TRUCKER
