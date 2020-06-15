@@ -33,36 +33,14 @@
   <span> · </span>
 </h3>
 
-React Native brings [**React**'s][r] declarative UI framework to iOS and Android. With React Native, you use native UI controls and have full access to the native platform.
+Ao realizar o download do app, o usuário acessa um tutorial e a seção de cadastro.
 
-- **Declarative.** React makes it painless to create interactive UIs. Declarative views make your code more predictable and easier to debug.
-- **Component-Based.** Build encapsulated components that manage their state, then compose them to make complex UIs.
-- **Developer Velocity.** See local changes in seconds. Changes to JavaScript code can be live reloaded without rebuilding the native app.
-- **Portability.** Reuse code across iOS, Android, and [other platforms][p].
+Já na tela inicial ele localiza os QGs disponíveis em seu trajeto em um mapa ou escolhe a cidade na qual ele deseja fazer a sua parada e realiza a reserva do seu dormitório no período desejado.
 
-React Native is developed and supported by many companies and individual core contributors. Find out more in our [ecosystem overview][e].
-
-[r]: https://reactjs.org/
-[p]: https://reactnative.dev/docs/out-of-tree-platforms
-[e]: https://github.com/facebook/react-native/blob/master/ECOSYSTEM.md
-
-## Contents
-
-- [Requirements](#-requirements)
-- [Building your first React Native app](#-building-your-first-react-native-app)
-- [Documentation](#-documentation)
-- [Upgrading](#-upgrading)
-- [How to Contribute](#-how-to-contribute)
-- [Code of Conduct](#code-of-conduct)
-- [License](#-license)
+Ao confirmar a reserva, o pagamento é automaticamente descontado da sua conta do aplicativo.
 
 
-## 📋 Requirements
-
-React Native apps may target iOS 10.0 and Android 4.1 (API 16) or newer. You may use Windows, macOS, or Linux as your development operating system, though building and running iOS apps is limited to macOS. Tools like [Expo](https://expo.io) can be used to work around this.
-
-## 🎉 Building your QG-TRUCKER app
-
-Follow the [Getting Started guide](https://reactnative.dev/docs/getting-started.html). The recommended way to install React Native depends on your project. Here you can find short guides for the most common scenarios:
-
-- [Trying out React Native] QG-TRUCKER
+Chegando no ponto de parada do QG, a vaga do caminhão está reservada para ele e o check in no dormitório é realizado através da leitura do QR Code na porta, destravando a fechadura eletrônica. 
+O check out também é feito através do QR code, sinalizando a saída do usuário e portanto, deixando a cabine disponível. Nesse momento, é possível fazer uma avaliação da experiência dele com o QG, que ficará visível para os outros usuários.
+ 
+O sistema de pagamento é pré-pago, e fica disponível na conta em forma de moedas. Para adicionar mais moedas basta cadastrar o número do cartão de crédito ou emitir um boleto, e isso pode ser feito por ele ou pela sua empresa através de um vaucher.  
